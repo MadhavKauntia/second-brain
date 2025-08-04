@@ -3,17 +3,8 @@ title: Madhav's Second Brain
 ---
 # Madhav's Second Brain
 
-This is my evolving knowledge garden — a collection of notes, ideas, and learnings from my journey as a software engineer, poker player, and curious human.
+This is my evolving knowledge garden — a messy, interconnected web of notes, ideas, and half-formed thoughts from my journey as a software engineer, poker player, and perpetually curious human.
 
-> I’m building this in public to make my thinking legible, connect dots, and track what I’m learning over time.
+Think of it as my external brain: everything I'm learning, questioning, connecting, and probably overthinking. Tech insights, poker strategy, decision-making frameworks, philosophical tangents, and the inevitable rabbit holes that seemed important at 2 AM.
 
-
-
-### 🧠 What you’ll find here:
-
-- ⚙️ **Engineering & System Design** — architecture notes, patterns, and tradeoffs
-- ♠️ **Poker Strategy** — thoughts on PLO, mental game, and session reviews
-- 🛠 **Productivity & Tools** — workflows, templates, and second brain systems
-- 📚 **Book Notes & Essays** — highlights, insights, and summaries
-- ✍️ **Thinking in Progress** — half-baked ideas and questions I'm exploring
-
+Fair warning: it's unfiltered and constantly changing. Some notes are polished, others are barely coherent. Welcome to how I actually think.
