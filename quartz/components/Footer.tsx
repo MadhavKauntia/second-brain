@@ -10,6 +10,9 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
+        <p>
+          Part of <a href="https://madhavkauntia.com" target="_blank" rel="noopener noreferrer">Madhav Kauntia's</a> digital garden.
+        </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
