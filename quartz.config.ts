@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "jzhao.xyz",
+    baseUrl: "notes.madhavkauntia.com",
     ignorePatterns: ["private", "templates"],
     defaultDateType: "created",
     theme: {
