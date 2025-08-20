@@ -10,22 +10,10 @@ This series introduces fundamental questions of justice and morality through cla
 
 ## Lecture Notes
 
-1. [[01 - Moral Side of Murder]]
+1. [[01 - The Moral Side of Murder]]
 
 ---
 
 ## Key Concepts
 
 See: [[Key Concepts]] for running definitions (e.g., Utilitarianism, Consequentialism, Consent, Rights).
-
----
-
-## Key Thinkers
-
-See: [[Thinkers]] for philosopher profiles (Bentham, Mill, Kant, Rawls, Aristotle, etc.).
-
----
-
-## Reflections
-
-See: [[Reflections]] for personal takeaways, open questions, and connections to modern issues.

@@ -7,7 +7,6 @@ tags:
   - harvard
 date: "20-08-2025"
 ---
-
 ## Main Theme
 What is the right thing to do? Introduction to moral philosophy through the lens of **utilitarianism** (maximizing happiness) and its challenges.
 
