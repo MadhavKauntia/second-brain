@@ -24,14 +24,15 @@ What is the right thing to do? Introduction to moral philosophy through the lens
 
 ## Arguments & Counterarguments
 - Argument (Utilitarianism):
-	- Necessity, dire circumstance and the idea that numbers matter.
-	- Wider effects matter.
-	- If you calculate the balance of happiness and suffering, you might have a case.
+	- Necessity and dire circumstances justify hard choices.
+	- Numbers matter (saving more lives = better).
+	- Wider effects (happiness vs. suffering) should be calculated.
 - Counterargument:
-	- Murder is murder. Even if it increases overall happiness.
+	- Murder is murder, regardless of outcome.
 	- Ignores individual rights and dignity.
 
-## Questions
-- Do we have certain fundamental rights?
-- Does a fair procedure justify any result?
+## Reflections / Questions
+
+- Do we have certain fundamental rights that can’t be overridden?
+- Does a fair procedure (e.g., consent, majority rule) justify any result?
 - What is the moral work of consent?
