@@ -8,7 +8,7 @@ title: Science of Claw Machines
 
 The machine takes as input the coin value, average value of a toy and the desired profit. The machine will automatically calculate when to send full strength to the claw.
 
-For example, if it costs $0.50 to play the game, and the prize inside costs $7, to make a profit of 50%, full power will be sent to the claw only about once every 21 games or so. They also randomize that winning game within a range so that players can't predict exactly when it will happen.
+For example, if it costs 0.50 dollars to play the game, and the prize inside costs 7 dollars, to make a profit of 50%, full power will be sent to the claw only about once every 21 games or so. They also randomize that winning game within a range so that players can't predict exactly when it will happen.
 
 There is also something called the dropping skill. They can program the machine to make you  think you almost won. The machine picks up the toy, but then drops it.
 
