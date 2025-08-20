@@ -1,11 +1,11 @@
 ---
-title: "The Moral Side of Murder"
+title: 01 - The Moral Side of Murder
 course: Justice – Michael Sandel
 tags:
   - philosophy
   - justice
   - harvard
-date: "20-08-2025"
+date: 20-08-2025
 ---
 ## Main Theme
 What is the right thing to do? Introduction to moral philosophy through the lens of **utilitarianism** (maximizing happiness) and its challenges.
