@@ -18,6 +18,10 @@ What is the right thing to do? Introduction to moral philosophy through the lens
 - Consequentialist - locates morality in the consequences of an act. Most influential example is Utilitarianism.
 - Categorial - locates morality in certain duties and rights.
 
+## Examples & Thought Experiments
+- **Trolley Problem**: Should you divert a runaway trolley to kill one instead of five?
+- **Lifeboat Cannibalism**: Is it acceptable for sailors to kill and eat one person to save the rest?
+
 ## Arguments & Counterarguments
 - Argument (Utilitarianism):
 	- Necessity, dire circumstance and the idea that numbers matter.
@@ -26,10 +30,6 @@ What is the right thing to do? Introduction to moral philosophy through the lens
 - Counterargument:
 	- Murder is murder. Even if it increases overall happiness.
 	- Ignores individual rights and dignity.
-
-## Examples & Thought Experiments
-- **Trolley Problem**: Should you divert a runaway trolley to kill one instead of five?
-- **Lifeboat Cannibalism**: Is it acceptable for sailors to kill and eat one person to save the rest?
 
 ## Questions
 - Do we have certain fundamental rights?
