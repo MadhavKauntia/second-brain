@@ -1,7 +1,7 @@
 ---
 title: Madhav's Second Brain
 ---
-# Madhav's Second Brain
+![[header.png]]# Madhav's Second Brain
 
 This is my evolving knowledge garden — a messy, interconnected web of notes, ideas, and half-formed thoughts from my journey as a software engineer, poker player, and perpetually curious human.
 
