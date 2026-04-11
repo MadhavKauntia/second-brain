@@ -43,6 +43,12 @@
 - Pages updated: all 22 wiki pages (2 sources, 14 concepts, 3 topics, overview.md); wiki/index.md deleted
 - Notes: Moved sources/, concepts/, topics/ from wiki/ subdirectory to content root. Updated all wikilinks from [[wiki/X/Y]] to [[X/Y]] throughout body text and frontmatter related: fields. Renamed sources: frontmatter key to raw: across all pages. Added **Raw notes:** link to both source pages. Deleted wiki/index.md and empty wiki/ directory.
 
+## [2026-04-11] ingest | System Design Masterclass — Lecture 01: Foundational Topics
+
+- Pages created: Sources/system-design-masterclass-01, Concepts/scaling, Concepts/delegation, Concepts/communication-protocols, Topics/system-design
+- Pages updated: index.md, reading.md
+- Notes: Surface-level survey lecture. Three new concept pages kept lean — all will be deepened by later lectures. Key connections: Concepts/scaling links forward to DDIA's partitioning/replication; Concepts/delegation maps to Concepts/eventual-consistency; Concepts/locking and Concepts/atomicity already exist from JCIP and are referenced in source page. overview.md not updated — no thesis shift from introductory material.
+
 ## [2026-04-11] ingest | Designing Data-Intensive Applications (Kleppmann)
 
 - Pages created: sources/designing-data-intensive-applications, concepts/reliability-scalability-maintainability, concepts/data-models, concepts/storage-indexes, concepts/replication, concepts/eventual-consistency, concepts/partitioning, concepts/transactions-acid, concepts/isolation-levels, concepts/distributed-faults, concepts/linearizability, topics/distributed-systems, topics/databases

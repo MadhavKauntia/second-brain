@@ -16,12 +16,14 @@ The synthesized layer gets richer every time I read something new. The notes sta
 - [[Notes/Engineering/designing-data-intensive-applications|Designing Data-Intensive Applications]] — Kleppmann reading notes; distributed data systems
 - [[Notes/Engineering/java-concurrency-in-practice|Java Concurrency in Practice]] — Goetz et al. reading notes; JVM concurrency fundamentals
 - [[Notes/Psychology/dopamine|Dopamine]] — Huberman Lab; dopamine mechanics, motivation, and reward design
+- [[Notes/Engineering/System Design Masterclass/01-foundational-topics-in-system-design|System Design Masterclass — Lecture 01]] — foundational approach, online/offline indicator case study, core topics survey
 
 ## Sources
 
 - [[Sources/designing-data-intensive-applications|Designing Data-Intensive Applications]] — Kleppmann's comprehensive treatment of distributed data systems: storage, replication, partitioning, transactions, and consistency
 - [[Sources/java-concurrency-in-practice|Java Concurrency in Practice]] — Goetz et al. on JVM concurrency fundamentals: thread safety, atomicity, locking, memory visibility and reordering
 - [[Sources/dopamine|Controlling Your Dopamine For Motivation, Focus and Satisfaction]] — Huberman on dopamine's role in motivation, the baseline/peak ratio, and reward design
+- [[Sources/system-design-masterclass-01|System Design Masterclass — Lecture 01]] — core-first design, heartbeat pattern, TTL optimization, scaling and delegation principles
 
 ## Concepts
 
@@ -41,6 +43,9 @@ The synthesized layer gets richer every time I read something new. The notes sta
 - [[Concepts/memory-visibility|Memory Visibility and Reordering]] — JVM memory model; reordering; volatile variables
 - [[Concepts/dopamine|Dopamine]] — Baseline/peak ratio; the readily-releasable pool; cold water's unique profile; caffeine vs. stimulants
 - [[Concepts/motivation-maintenance|Motivation Maintenance]] — Intermittent reinforcement; reward stacking problem; process rewards; burnout as baseline suppression
+- [[Concepts/scaling|Scaling]] — Vertical vs. horizontal scaling; stateful bottlenecks; scale bottom-up heuristic
+- [[Concepts/delegation|Delegation]] — Async by default; delegate and respond; what work belongs off the critical path
+- [[Concepts/communication-protocols|Communication Protocols]] — Short polling, long polling, WebSocket, SSE; when each applies
 
 ## Topics
 
@@ -48,6 +53,7 @@ The synthesized layer gets richer every time I read something new. The notes sta
 - [[Topics/databases|Databases]] — Storage engines, data models, transactions, and distributed databases
 - [[Topics/concurrent-programming|Concurrent Programming]] — Thread safety, locking, memory visibility; program-level concurrency on the JVM
 - [[Topics/psychology|Psychology]] — Neuroscience of motivation and behavior; dopamine mechanics and reward design
+- [[Topics/system-design|System Design]] — Designing large-scale systems; component selection, capacity estimation, architectural trade-offs
 
 ---
 

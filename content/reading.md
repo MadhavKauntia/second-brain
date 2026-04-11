@@ -11,6 +11,7 @@ title: Reading List
 - Thinking Fast and Slow
 
 ## In Progress
+- System Design Masterclass
 
 ## Done
 - [x] Designing Data-Intensive Applications
