@@ -3,8 +3,8 @@ title: Eventual Consistency and Replication Lag
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/designing-data-intensive-applications.md]
-related: [wiki/concepts/replication, wiki/concepts/linearizability, wiki/concepts/isolation-levels, wiki/topics/distributed-systems, wiki/sources/designing-data-intensive-applications]
+raw: [Engineering/designing-data-intensive-applications.md]
+related: [concepts/replication, concepts/linearizability, concepts/isolation-levels, topics/distributed-systems, sources/designing-data-intensive-applications]
 ---
 
 # Eventual Consistency and Replication Lag
@@ -29,7 +29,7 @@ The gap between "eventually consistent" (marketing) and the specific anomalies e
 
 ## Evidence & examples
 
-From [[wiki/sources/designing-data-intensive-applications]]:
+From [[sources/designing-data-intensive-applications]]:
 
 - Facebook's timeline inconsistency example: a user posts, reloads the page, and doesn't see their own post because the read hit a lagging replica
 - Monotonic reads violation: a user refreshes a page and sees an older version of the data than what they saw moments ago, as if traveling backward in time
@@ -43,7 +43,7 @@ From [[wiki/sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[wiki/concepts/replication]] — the mechanism that produces replication lag
-- [[wiki/concepts/linearizability]] — the strong consistency alternative: no stale reads, ever
-- [[wiki/concepts/isolation-levels]] — analogous spectrum of guarantees for concurrent local transactions
-- [[wiki/topics/distributed-systems]] — broader theory of distributed consistency
+- [[concepts/replication]] — the mechanism that produces replication lag
+- [[concepts/linearizability]] — the strong consistency alternative: no stale reads, ever
+- [[concepts/isolation-levels]] — analogous spectrum of guarantees for concurrent local transactions
+- [[topics/distributed-systems]] — broader theory of distributed consistency

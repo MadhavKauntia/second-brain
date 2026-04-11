@@ -3,8 +3,8 @@ title: Data Models
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/designing-data-intensive-applications.md]
-related: [wiki/concepts/storage-indexes, wiki/concepts/partitioning, wiki/topics/databases, wiki/sources/designing-data-intensive-applications]
+raw: [Engineering/designing-data-intensive-applications.md]
+related: [concepts/storage-indexes, concepts/partitioning, topics/databases, sources/designing-data-intensive-applications]
 ---
 
 # Data Models
@@ -29,7 +29,7 @@ The *impedance mismatch* problem — the gap between object-oriented application
 
 ## Evidence & examples
 
-From [[wiki/sources/designing-data-intensive-applications]]:
+From [[sources/designing-data-intensive-applications]]:
 
 - Document model reduces impedance mismatch for hierarchical data, but struggles with joins and many-to-many relationships
 - Graph model is essentially a generalization: if you have many-to-many relationships everywhere, model it as a graph rather than fighting the relational join machinery
@@ -44,6 +44,6 @@ From [[wiki/sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[wiki/concepts/storage-indexes]] — how data models are physically implemented on disk
-- [[wiki/concepts/partitioning]] — how document and key-value models are distributed
-- [[wiki/topics/databases]] — broader database engineering context
+- [[concepts/storage-indexes]] — how data models are physically implemented on disk
+- [[concepts/partitioning]] — how document and key-value models are distributed
+- [[topics/databases]] — broader database engineering context

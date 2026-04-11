@@ -3,8 +3,8 @@ title: Concurrent Programming
 type: topic
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/java-concurrency-in-practice.md]
-related: [wiki/concepts/thread-safety, wiki/concepts/atomicity, wiki/concepts/locking, wiki/concepts/memory-visibility, wiki/concepts/isolation-levels, wiki/topics/distributed-systems]
+raw: [Engineering/java-concurrency-in-practice.md]
+related: [concepts/thread-safety, concepts/atomicity, concepts/locking, concepts/memory-visibility, concepts/isolation-levels, topics/distributed-systems]
 ---
 
 # Concurrent Programming
@@ -15,14 +15,14 @@ The design and implementation of programs that execute multiple computations sim
 
 ## Core concepts
 
-- [[wiki/concepts/thread-safety]] — what it means for a class to be safe under concurrent access; the three strategies (no sharing, immutability, synchronization)
-- [[wiki/concepts/atomicity]] — operations that must execute as indivisible units; read-modify-write races; program-level vs. database-level atomicity
-- [[wiki/concepts/locking]] — intrinsic locks, reentrancy, lock-guarding discipline; deadlock; fine vs. coarse granularity
-- [[wiki/concepts/memory-visibility]] — the JVM memory model; reordering; volatile variables; visibility as a separate concern from mutual exclusion
+- [[concepts/thread-safety]] — what it means for a class to be safe under concurrent access; the three strategies (no sharing, immutability, synchronization)
+- [[concepts/atomicity]] — operations that must execute as indivisible units; read-modify-write races; program-level vs. database-level atomicity
+- [[concepts/locking]] — intrinsic locks, reentrancy, lock-guarding discipline; deadlock; fine vs. coarse granularity
+- [[concepts/memory-visibility]] — the JVM memory model; reordering; volatile variables; visibility as a separate concern from mutual exclusion
 
 ## Key sources
 
-- [[wiki/sources/java-concurrency-in-practice]] — foundational treatment of JVM concurrency; thread safety, locking, and visibility
+- [[sources/java-concurrency-in-practice]] — foundational treatment of JVM concurrency; thread safety, locking, and visibility
 
 ## Synthesis
 

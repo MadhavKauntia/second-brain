@@ -3,8 +3,8 @@ title: Partitioning (Sharding)
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/designing-data-intensive-applications.md]
-related: [wiki/concepts/replication, wiki/concepts/storage-indexes, wiki/concepts/distributed-faults, wiki/topics/distributed-systems, wiki/topics/databases, wiki/sources/designing-data-intensive-applications]
+raw: [Engineering/designing-data-intensive-applications.md]
+related: [concepts/replication, concepts/storage-indexes, concepts/distributed-faults, topics/distributed-systems, topics/databases, sources/designing-data-intensive-applications]
 ---
 
 # Partitioning (Sharding)
@@ -47,7 +47,7 @@ Partitioning is the mechanism that makes a database horizontally scalable — it
 
 ## Evidence & examples
 
-From [[wiki/sources/designing-data-intensive-applications]]:
+From [[sources/designing-data-intensive-applications]]:
 
 - Timestamp as partition key creates a temporal hot spot: all current writes go to one partition, all historical reads are spread across others
 - Cassandra's compound key design is a concrete example of accepting hash partitioning's trade-offs while recovering range query ability within partitions
@@ -61,7 +61,7 @@ From [[wiki/sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[wiki/concepts/replication]] — partitioning is almost always combined with replication for fault tolerance
-- [[wiki/concepts/storage-indexes]] — secondary indexes behave differently depending on the partitioning scheme
-- [[wiki/concepts/distributed-faults]] — what happens to partitioning when nodes fail
-- [[wiki/topics/distributed-systems]] — broader distributed systems context
+- [[concepts/replication]] — partitioning is almost always combined with replication for fault tolerance
+- [[concepts/storage-indexes]] — secondary indexes behave differently depending on the partitioning scheme
+- [[concepts/distributed-faults]] — what happens to partitioning when nodes fail
+- [[topics/distributed-systems]] — broader distributed systems context

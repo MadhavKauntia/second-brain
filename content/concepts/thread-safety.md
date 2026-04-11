@@ -3,8 +3,8 @@ title: Thread Safety
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/java-concurrency-in-practice.md]
-related: [wiki/concepts/atomicity, wiki/concepts/locking, wiki/concepts/memory-visibility, wiki/topics/concurrent-programming, wiki/sources/java-concurrency-in-practice]
+raw: [Engineering/java-concurrency-in-practice.md]
+related: [concepts/atomicity, concepts/locking, concepts/memory-visibility, topics/concurrent-programming, sources/java-concurrency-in-practice]
 ---
 
 # Thread Safety
@@ -31,7 +31,7 @@ The three-strategy framework is useful because it clarifies that synchronization
 
 ## Evidence & examples
 
-From [[wiki/sources/java-concurrency-in-practice]]:
+From [[sources/java-concurrency-in-practice]]:
 
 - `StatelessFactorizer`: a servlet with no fields and no references to other classes' fields. It is unconditionally thread-safe regardless of how many threads call it simultaneously — there is nothing to share.
 - `UnsafeCountingFactorizer`: adds a `long count` field. The `++count` operation appears simple but is a read-modify-write sequence — not atomic. Two threads can both read `9`, both compute `10`, and both write `10`, silently losing one increment.
@@ -44,7 +44,7 @@ From [[wiki/sources/java-concurrency-in-practice]]:
 
 ## Related
 
-- [[wiki/concepts/atomicity]] — operations that must execute as an indivisible unit to preserve thread-safe behavior
-- [[wiki/concepts/locking]] — the primary synchronization mechanism for shared mutable state
-- [[wiki/concepts/memory-visibility]] — the often-overlooked second half of synchronization
-- [[wiki/topics/concurrent-programming]] — broader context for concurrent program design
+- [[concepts/atomicity]] — operations that must execute as an indivisible unit to preserve thread-safe behavior
+- [[concepts/locking]] — the primary synchronization mechanism for shared mutable state
+- [[concepts/memory-visibility]] — the often-overlooked second half of synchronization
+- [[topics/concurrent-programming]] — broader context for concurrent program design

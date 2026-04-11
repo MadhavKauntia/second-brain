@@ -3,8 +3,8 @@ title: Designing Data-Intensive Applications
 type: source
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/designing-data-intensive-applications.md]
-related: [wiki/concepts/reliability-scalability-maintainability, wiki/concepts/data-models, wiki/concepts/storage-indexes, wiki/concepts/replication, wiki/concepts/eventual-consistency, wiki/concepts/partitioning, wiki/concepts/transactions-acid, wiki/concepts/isolation-levels, wiki/concepts/distributed-faults, wiki/concepts/linearizability, wiki/topics/distributed-systems, wiki/topics/databases]
+raw: [Engineering/designing-data-intensive-applications.md]
+related: [concepts/reliability-scalability-maintainability, concepts/data-models, concepts/storage-indexes, concepts/replication, concepts/eventual-consistency, concepts/partitioning, concepts/transactions-acid, concepts/isolation-levels, concepts/distributed-faults, concepts/linearizability, topics/distributed-systems, topics/databases]
 ---
 
 # Designing Data-Intensive Applications
@@ -12,6 +12,7 @@ related: [wiki/concepts/reliability-scalability-maintainability, wiki/concepts/d
 **Type:** book
 **Domain:** Engineering
 **Ingested:** 2026-04-11
+**Raw notes:** [[raw/Engineering/designing-data-intensive-applications|My notes while reading]]
 
 ## Summary
 
@@ -39,16 +40,16 @@ A recurring insight is that many "simple" abstractions leak. Document databases 
 
 ## Connections
 
-- [[wiki/concepts/reliability-scalability-maintainability]] — the source's opening framework for evaluating systems.
-- [[wiki/concepts/data-models]] — foundational chapter on relational, document, and graph models and when to use each.
-- [[wiki/concepts/storage-indexes]] — detailed treatment of how databases physically store and retrieve data.
-- [[wiki/concepts/replication]] — how distributed databases keep multiple copies consistent.
-- [[wiki/concepts/eventual-consistency]] — replication lag and its anomalies; the weakness of "eventual" as a guarantee.
-- [[wiki/concepts/partitioning]] — strategies for distributing data across nodes.
-- [[wiki/concepts/transactions-acid]] — what transactions actually mean and what ACID guarantees.
-- [[wiki/concepts/isolation-levels]] — the spectrum from weak to strong isolation and the race conditions each allows.
-- [[wiki/concepts/distributed-faults]] — the theory of what can go wrong in distributed systems (partial failures, Byzantine faults, system models).
-- [[wiki/concepts/linearizability]] — the strong consistency guarantee and its connection to CAP theorem.
+- [[concepts/reliability-scalability-maintainability]] — the source's opening framework for evaluating systems.
+- [[concepts/data-models]] — foundational chapter on relational, document, and graph models and when to use each.
+- [[concepts/storage-indexes]] — detailed treatment of how databases physically store and retrieve data.
+- [[concepts/replication]] — how distributed databases keep multiple copies consistent.
+- [[concepts/eventual-consistency]] — replication lag and its anomalies; the weakness of "eventual" as a guarantee.
+- [[concepts/partitioning]] — strategies for distributing data across nodes.
+- [[concepts/transactions-acid]] — what transactions actually mean and what ACID guarantees.
+- [[concepts/isolation-levels]] — the spectrum from weak to strong isolation and the race conditions each allows.
+- [[concepts/distributed-faults]] — the theory of what can go wrong in distributed systems (partial failures, Byzantine faults, system models).
+- [[concepts/linearizability]] — the strong consistency guarantee and its connection to CAP theorem.
 
 ## Open questions
 

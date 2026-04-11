@@ -3,8 +3,8 @@ title: Java Concurrency in Practice
 type: source
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/java-concurrency-in-practice.md]
-related: [wiki/concepts/thread-safety, wiki/concepts/atomicity, wiki/concepts/locking, wiki/concepts/memory-visibility, wiki/concepts/isolation-levels, wiki/concepts/transactions-acid, wiki/topics/concurrent-programming]
+raw: [Engineering/java-concurrency-in-practice.md]
+related: [concepts/thread-safety, concepts/atomicity, concepts/locking, concepts/memory-visibility, concepts/isolation-levels, concepts/transactions-acid, topics/concurrent-programming]
 ---
 
 # Java Concurrency in Practice
@@ -12,6 +12,7 @@ related: [wiki/concepts/thread-safety, wiki/concepts/atomicity, wiki/concepts/lo
 **Type:** book
 **Domain:** Engineering
 **Ingested:** 2026-04-11
+**Raw notes:** [[raw/Engineering/java-concurrency-in-practice|My notes while reading]]
 
 ## Summary
 
@@ -35,12 +36,12 @@ The visibility section is the most surprising: even without conflicting writes, 
 
 ## Connections
 
-- [[wiki/concepts/thread-safety]] — the book's foundational concept; informs the entire chapter structure.
-- [[wiki/concepts/atomicity]] — connects to DDIA's lost update problem and compare-and-set; different abstraction level, same underlying issue.
-- [[wiki/concepts/locking]] — intrinsic locks, reentrancy, the lock-guarding discipline. Analogous to 2PL in [[wiki/concepts/isolation-levels]].
-- [[wiki/concepts/memory-visibility]] — the less obvious half of synchronization; volatile variables. Parallels DDIA's replication visibility anomalies at a different stack layer.
-- [[wiki/concepts/isolation-levels]] — DDIA's 2PL is the database-level equivalent of JCIP's intrinsic locking. Lost updates in DDIA correspond to the `++count` race in JCIP.
-- [[wiki/concepts/transactions-acid]] — ACID atomicity (all-or-nothing for a group of operations) vs. program-level atomicity (indivisible operations) — related abstractions at different layers.
+- [[concepts/thread-safety]] — the book's foundational concept; informs the entire chapter structure.
+- [[concepts/atomicity]] — connects to DDIA's lost update problem and compare-and-set; different abstraction level, same underlying issue.
+- [[concepts/locking]] — intrinsic locks, reentrancy, the lock-guarding discipline. Analogous to 2PL in [[concepts/isolation-levels]].
+- [[concepts/memory-visibility]] — the less obvious half of synchronization; volatile variables. Parallels DDIA's replication visibility anomalies at a different stack layer.
+- [[concepts/isolation-levels]] — DDIA's 2PL is the database-level equivalent of JCIP's intrinsic locking. Lost updates in DDIA correspond to the `++count` race in JCIP.
+- [[concepts/transactions-acid]] — ACID atomicity (all-or-nothing for a group of operations) vs. program-level atomicity (indivisible operations) — related abstractions at different layers.
 
 ## Open questions
 

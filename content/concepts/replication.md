@@ -3,8 +3,8 @@ title: Replication
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/designing-data-intensive-applications.md]
-related: [wiki/concepts/eventual-consistency, wiki/concepts/linearizability, wiki/concepts/distributed-faults, wiki/concepts/partitioning, wiki/topics/distributed-systems, wiki/topics/databases, wiki/sources/designing-data-intensive-applications]
+raw: [Engineering/designing-data-intensive-applications.md]
+related: [concepts/eventual-consistency, concepts/linearizability, concepts/distributed-faults, concepts/partitioning, topics/distributed-systems, topics/databases, sources/designing-data-intensive-applications]
 ---
 
 # Replication
@@ -43,13 +43,13 @@ Any replica can accept writes. Reads and writes are sent to multiple replicas in
 
 ## Why it matters
 
-Replication is the primary mechanism for two critical system properties: **fault tolerance** (data survives node failures) and **read scalability** (read load can be distributed across replicas). But replication introduces **consistency trade-offs** — replicas can diverge, and the gap before convergence creates anomalies visible to users. See [[wiki/concepts/eventual-consistency]].
+Replication is the primary mechanism for two critical system properties: **fault tolerance** (data survives node failures) and **read scalability** (read load can be distributed across replicas). But replication introduces **consistency trade-offs** — replicas can diverge, and the gap before convergence creates anomalies visible to users. See [[concepts/eventual-consistency]].
 
 Leader failover is deceptively hard. Split-brain (two nodes both believe they are leader) can corrupt data. Failover requires detecting the failure, electing a new leader, reconfiguring clients, and handling any writes that reached the old leader but not its replicas — all under uncertainty.
 
 ## Evidence & examples
 
-From [[wiki/sources/designing-data-intensive-applications]]:
+From [[sources/designing-data-intensive-applications]]:
 
 - Setting up a new follower without downtime: snapshot → copy → catch up from replication log. This requires the log position of the snapshot to be known.
 - Fully asynchronous replication can lose committed writes if the leader fails before followers catch up — a durability–availability trade-off
@@ -64,8 +64,8 @@ From [[wiki/sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[wiki/concepts/eventual-consistency]] — replication lag and the anomalies it produces
-- [[wiki/concepts/linearizability]] — which replication strategies can be made linearizable
-- [[wiki/concepts/distributed-faults]] — what happens when nodes and networks fail during replication
-- [[wiki/concepts/partitioning]] — replication and partitioning are typically combined
-- [[wiki/topics/distributed-systems]] — broader theory of distributed systems
+- [[concepts/eventual-consistency]] — replication lag and the anomalies it produces
+- [[concepts/linearizability]] — which replication strategies can be made linearizable
+- [[concepts/distributed-faults]] — what happens when nodes and networks fail during replication
+- [[concepts/partitioning]] — replication and partitioning are typically combined
+- [[topics/distributed-systems]] — broader theory of distributed systems

@@ -3,8 +3,8 @@ title: Distributed Systems Faults
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/designing-data-intensive-applications.md]
-related: [wiki/concepts/replication, wiki/concepts/linearizability, wiki/concepts/reliability-scalability-maintainability, wiki/topics/distributed-systems, wiki/sources/designing-data-intensive-applications]
+raw: [Engineering/designing-data-intensive-applications.md]
+related: [concepts/replication, concepts/linearizability, concepts/reliability-scalability-maintainability, topics/distributed-systems, sources/designing-data-intensive-applications]
 ---
 
 # Distributed Systems Faults
@@ -59,7 +59,7 @@ The practical upshot: systems must be designed to handle every operation being r
 
 ## Evidence & examples
 
-From [[wiki/sources/designing-data-intensive-applications]]:
+From [[sources/designing-data-intensive-applications]]:
 
 - The lease-renewal Java code example: a GC pause between `lease.isValid()` and `process(request)` means the node continues processing after the lease expired and another leader was elected — a real correctness bug
 - Byzantine Generals Problem: reaching consensus when some nodes may lie — provably unsolvable without 3f+1 nodes to tolerate f Byzantine faults
@@ -73,7 +73,7 @@ From [[wiki/sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[wiki/concepts/replication]] — replication protocols must handle all of these failure modes
-- [[wiki/concepts/linearizability]] — strong consistency guarantee under these fault conditions
-- [[wiki/concepts/reliability-scalability-maintainability]] — distributed faults are the adversary that reliability is designed against
-- [[wiki/topics/distributed-systems]] — broader distributed systems theory
+- [[concepts/replication]] — replication protocols must handle all of these failure modes
+- [[concepts/linearizability]] — strong consistency guarantee under these fault conditions
+- [[concepts/reliability-scalability-maintainability]] — distributed faults are the adversary that reliability is designed against
+- [[topics/distributed-systems]] — broader distributed systems theory

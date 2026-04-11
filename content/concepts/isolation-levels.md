@@ -3,8 +3,8 @@ title: Isolation Levels
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: [Engineering/designing-data-intensive-applications.md, Engineering/java-concurrency-in-practice.md]
-related: [wiki/concepts/transactions-acid, wiki/concepts/eventual-consistency, wiki/concepts/locking, wiki/concepts/atomicity, wiki/topics/databases, wiki/topics/concurrent-programming, wiki/sources/designing-data-intensive-applications, wiki/sources/java-concurrency-in-practice]
+raw: [Engineering/designing-data-intensive-applications.md, Engineering/java-concurrency-in-practice.md]
+related: [concepts/transactions-acid, concepts/eventual-consistency, concepts/locking, concepts/atomicity, topics/databases, topics/concurrent-programming, sources/designing-data-intensive-applications, sources/java-concurrency-in-practice]
 ---
 
 # Isolation Levels
@@ -58,7 +58,7 @@ The spectrum — read committed → snapshot → serializable — represents rea
 
 ## Evidence & examples
 
-From [[wiki/sources/designing-data-intensive-applications]]:
+From [[sources/designing-data-intensive-applications]]:
 
 - Snapshot isolation + backup failure case: during a multi-hour backup, some rows are from earlier versions — inconsistencies become permanent if restored
 - Write skew (on-call doctors) illustrates how two transactions can each do the right thing individually but violate an invariant together
@@ -73,9 +73,9 @@ From [[wiki/sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[wiki/concepts/transactions-acid]] — the ACID model within which isolation levels operate
-- [[wiki/concepts/eventual-consistency]] — the distributed analogue to isolation levels; similar anomaly spectrum
-- [[wiki/concepts/locking]] — 2PL is the database-level implementation of locking for serializable isolation; mirrors Java's intrinsic lock discipline in [[wiki/sources/java-concurrency-in-practice]]
-- [[wiki/concepts/atomicity]] — lost updates are a failure of atomicity at the transaction level; JCIP's read-modify-write race is the same problem at the program level
-- [[wiki/topics/databases]] — broader database engineering context
-- [[wiki/topics/concurrent-programming]] — program-level concurrency; the same atomicity and visibility concerns apply at the thread level
+- [[concepts/transactions-acid]] — the ACID model within which isolation levels operate
+- [[concepts/eventual-consistency]] — the distributed analogue to isolation levels; similar anomaly spectrum
+- [[concepts/locking]] — 2PL is the database-level implementation of locking for serializable isolation; mirrors Java's intrinsic lock discipline in [[sources/java-concurrency-in-practice]]
+- [[concepts/atomicity]] — lost updates are a failure of atomicity at the transaction level; JCIP's read-modify-write race is the same problem at the program level
+- [[topics/databases]] — broader database engineering context
+- [[topics/concurrent-programming]] — program-level concurrency; the same atomicity and visibility concerns apply at the thread level
