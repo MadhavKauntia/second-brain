@@ -3,7 +3,7 @@ title: Data Models
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/designing-data-intensive-applications.md]
+notes: [notes/Engineering/designing-data-intensive-applications.md]
 related: [concepts/storage-indexes, concepts/partitioning, topics/databases, sources/designing-data-intensive-applications]
 ---
 

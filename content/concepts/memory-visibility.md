@@ -3,7 +3,7 @@ title: Memory Visibility and Reordering
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/java-concurrency-in-practice.md]
+notes: [notes/Engineering/java-concurrency-in-practice.md]
 related: [concepts/thread-safety, concepts/locking, concepts/eventual-consistency, topics/concurrent-programming, sources/java-concurrency-in-practice]
 ---
 

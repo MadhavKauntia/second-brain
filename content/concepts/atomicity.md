@@ -3,7 +3,7 @@ title: Atomicity
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/java-concurrency-in-practice.md, Engineering/designing-data-intensive-applications.md]
+notes: [notes/Engineering/java-concurrency-in-practice.md, notes/Engineering/designing-data-intensive-applications.md]
 related: [concepts/thread-safety, concepts/locking, concepts/transactions-acid, concepts/isolation-levels, topics/concurrent-programming, topics/databases, sources/java-concurrency-in-practice, sources/designing-data-intensive-applications]
 ---
 

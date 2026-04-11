@@ -3,7 +3,7 @@ title: Replication
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/designing-data-intensive-applications.md]
+notes: [notes/Engineering/designing-data-intensive-applications.md]
 related: [concepts/eventual-consistency, concepts/linearizability, concepts/distributed-faults, concepts/partitioning, topics/distributed-systems, topics/databases, sources/designing-data-intensive-applications]
 ---
 

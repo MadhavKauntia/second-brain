@@ -3,7 +3,7 @@ title: Concurrent Programming
 type: topic
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/java-concurrency-in-practice.md]
+notes: [notes/Engineering/java-concurrency-in-practice.md]
 related: [concepts/thread-safety, concepts/atomicity, concepts/locking, concepts/memory-visibility, concepts/isolation-levels, topics/distributed-systems]
 ---
 

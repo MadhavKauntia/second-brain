@@ -3,7 +3,7 @@ title: Storage Engines and Indexes
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/designing-data-intensive-applications.md]
+notes: [notes/Engineering/designing-data-intensive-applications.md]
 related: [concepts/data-models, concepts/transactions-acid, concepts/replication, topics/databases, sources/designing-data-intensive-applications]
 ---
 

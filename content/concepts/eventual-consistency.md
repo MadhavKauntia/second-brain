@@ -3,7 +3,7 @@ title: Eventual Consistency and Replication Lag
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/designing-data-intensive-applications.md]
+notes: [notes/Engineering/designing-data-intensive-applications.md]
 related: [concepts/replication, concepts/linearizability, concepts/isolation-levels, topics/distributed-systems, sources/designing-data-intensive-applications]
 ---
 

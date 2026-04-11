@@ -3,7 +3,7 @@ title: Designing Data-Intensive Applications
 type: source
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/designing-data-intensive-applications.md]
+notes: notes/Engineering/designing-data-intensive-applications.md
 related: [concepts/reliability-scalability-maintainability, concepts/data-models, concepts/storage-indexes, concepts/replication, concepts/eventual-consistency, concepts/partitioning, concepts/transactions-acid, concepts/isolation-levels, concepts/distributed-faults, concepts/linearizability, topics/distributed-systems, topics/databases]
 ---
 
@@ -12,7 +12,7 @@ related: [concepts/reliability-scalability-maintainability, concepts/data-models
 **Type:** book
 **Domain:** Engineering
 **Ingested:** 2026-04-11
-**Raw notes:** [[raw/Engineering/designing-data-intensive-applications|My notes while reading]]
+**Notes:** [[notes/Engineering/designing-data-intensive-applications|My notes while reading]]
 
 ## Summary
 

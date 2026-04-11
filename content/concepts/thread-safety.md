@@ -3,7 +3,7 @@ title: Thread Safety
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/java-concurrency-in-practice.md]
+notes: [notes/Engineering/java-concurrency-in-practice.md]
 related: [concepts/atomicity, concepts/locking, concepts/memory-visibility, topics/concurrent-programming, sources/java-concurrency-in-practice]
 ---
 

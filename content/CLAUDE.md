@@ -20,7 +20,7 @@ content/                       ← vault root (this is where you are)
 ├── index.md                   ← homepage (published)
 ├── overview.md                ← evolving high-level synthesis (published)
 ├── log.md                     ← append-only activity log (never published)
-├── raw/                       ← immutable source material, READ ONLY, published as evidence
+├── notes/                     ← immutable source material, READ ONLY, published as evidence
 │   ├── Engineering/           ← engineering book notes
 │   └── Poker/                 ← poker notes
 ├── sources/                   ← one synthesis page per ingested source
@@ -30,10 +30,10 @@ content/                       ← vault root (this is where you are)
 
 **Rules:**
 
-- Never modify anything in `raw/`. Read-only, always.
+- Never modify anything in `notes/`. Read-only, always.
 - All wiki writes go inside `sources/`, `concepts/`, or `topics/`.
-- `sources/` is your synthesis of a source — not a copy of it. The raw file lives in `raw/`; the source page is your interpretation: summary, key ideas, connections, open questions.
-- Every `sources/` page must link back to its corresponding `raw/` file so readers can verify the underlying notes.
+- `sources/` is your synthesis of a source — not a copy of it. The note file lives in `notes/`; the source page is your interpretation: summary, key ideas, connections, open questions.
+- Every `sources/` page must link back to its corresponding `notes/` file so readers can verify the underlying notes.
 - Every new page must be linked from `index.md`.
 - Every ingest must be logged in `log.md`.
 
@@ -46,7 +46,7 @@ The vault publishes to notes.madhavkauntia.com via Quartz. URLs map directly fro
 ```
 index.md                              → notes.madhavkauntia.com/
 overview.md                           → notes.madhavkauntia.com/overview
-raw/Engineering/ddia.md               → notes.madhavkauntia.com/raw/Engineering/ddia
+notes/Engineering/ddia.md             → notes.madhavkauntia.com/notes/Engineering/ddia
 sources/ddia.md                       → notes.madhavkauntia.com/sources/ddia
 concepts/mental-models.md             → notes.madhavkauntia.com/concepts/mental-models
 topics/system-design.md               → notes.madhavkauntia.com/topics/system-design
@@ -66,14 +66,14 @@ title: <page title>
 type: concept | source | topic | overview
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-raw: [path to raw source file, if applicable]
+notes: [path to notes file, if applicable]
 related: [list of wikilinks to related pages]
 ---
 ```
 
 ### Source pages (`sources/`)
 
-One page per ingested source. This is your synthesis — not a transcript of the raw file. Always link back to the raw notes.
+One page per ingested source. This is your synthesis — not a transcript of the notes file. Always link back to the original notes.
 
 ```markdown
 ---
@@ -81,7 +81,7 @@ title: <Book / Article Title>
 type: source
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-raw: raw/Engineering/<filename>
+notes: notes/Engineering/<filename>
 related: []
 ---
 
@@ -90,7 +90,7 @@ related: []
 **Type:** book | article | course | paper
 **Domain:** Engineering | Psychology | AI | Poker | ...
 **Ingested:** YYYY-MM-DD
-**Raw notes:** [[raw/Engineering/<filename>|My notes while reading]]
+**Notes:** [[notes/Engineering/<filename>|My notes while reading]]
 
 ## Summary
 2–4 paragraphs. Your interpretation, not a recap. What does this source argue? What is its central claim?
@@ -115,7 +115,7 @@ title: <Concept Name>
 type: concept
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-raw: []
+notes: []
 related: []
 ---
 
@@ -147,7 +147,7 @@ title: <Topic Name>
 type: topic
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-raw: []
+notes: []
 related: []
 ---
 
@@ -179,9 +179,9 @@ Triggered when the human says "ingest [source path]".
 
 **Steps — do all of them, in order:**
 
-1. Read the raw source fully.
+1. Read the notes file fully.
 2. Brief discussion with human: what surprised you, what's most important, any questions.
-3. Write `sources/<slug>.md` — synthesis page only. Do not copy raw content. Always include the **Raw notes** link pointing back to the file in `raw/`.
+3. Write `sources/<slug>.md` — synthesis page only. Do not copy notes content. Always include the **Notes** link pointing back to the file in `notes/`.
 4. Identify all concepts the source introduces or touches. For each:
     - If concept page exists → update it (add evidence, note tensions, revise synthesis, update `updated` date).
     - If concept page doesn't exist → create `concepts/<slug>.md`.
@@ -211,7 +211,7 @@ Triggered when the human says "lint the wiki", or after every ~10 ingests.
 
 - Concept pages mentioned in source or topic pages but not yet created
 - Orphan pages with no inbound wikilinks
-- Source pages missing their Raw notes link back to `raw/`
+- Source pages missing their Notes link back to `notes/`
 - Stale synthesis on topic pages superseded by newer sources
 - Contradictions between pages — flag explicitly on the relevant concept page under "Tensions & counterarguments", never silently overwrite
 - Missing `related` frontmatter links
@@ -223,14 +223,14 @@ Report what you found and fixed. Suggest 2–3 sources worth seeking based on op
 
 ## index.md Format
 
-Four sections: **Raw Notes** | **Sources** | **Concepts** | **Topics**
+Four sections: **Notes** | **Sources** | **Concepts** | **Topics**
 
 ```
-## Raw Notes
-- [[raw/Engineering/slug|Title]] — one-line description
+## Notes
+- [[notes/Engineering/slug|Title]] — one-line description
 
 ## Sources
-- [[sources/slug|Title]] — one-line summary (links to raw notes)
+- [[sources/slug|Title]] — one-line summary (links to notes)
 
 ## Concepts
 - [[concepts/slug|Title]] — one-line definition
@@ -265,7 +265,7 @@ Append-only. Never edit old entries. Each entry header must start with `## [YYYY
 - Prefer splitting over padding. A short focused page beats a long unfocused one.
 - When two sources contradict — flag it explicitly under "Tensions & counterarguments". Never paper over it.
 - Cross-domain connections are the highest-value output. When a concept from Engineering appears in Psychology or AI, note it explicitly on the concept page.
-- Every source page must link to its raw notes. This is non-negotiable — it's what makes the knowledge base verifiable.
+- Every source page must link to its notes file. This is non-negotiable — it's what makes the knowledge base verifiable.
 
 ---
 

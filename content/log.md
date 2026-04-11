@@ -21,6 +21,11 @@
 - Pages updated: index.md, concepts/isolation-levels (added locking/atomicity cross-refs), concepts/transactions-acid (added atomicity cross-ref)
 - Notes: 4 new concept pages covering JVM concurrency fundamentals. Strong cross-wiki connections: locking ↔ 2PL, atomicity ↔ lost updates, memory-visibility ↔ eventual-consistency replication lag. Notes cover Fundamentals chapter only; open edges around happens-before, j.u.c., and coroutines.
 
+## [2026-04-11] rename | Rename raw/ directory to notes/; update all path references
+
+- Pages updated: all 20 wiki pages (2 sources, 14 concepts, 3 topics, overview.md) plus CLAUDE.md
+- Notes: Renamed physical raw/ directory to notes/. Updated raw: frontmatter key to notes: across all pages. Updated notes path values from [Engineering/...] to [notes/Engineering/...]. Updated body links from [[raw/Engineering/...]] to [[notes/Engineering/...]]. Updated **Raw notes:** labels to **Notes:**. Zero raw/ path references remain.
+
 ## [2026-04-11] migrate | Move wiki/ subdirectories to content root; update all wikilinks
 
 - Pages created: index.md (replaced homepage with new 4-section catalog)

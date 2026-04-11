@@ -3,7 +3,7 @@ title: Isolation Levels
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/designing-data-intensive-applications.md, Engineering/java-concurrency-in-practice.md]
+notes: [notes/Engineering/designing-data-intensive-applications.md, notes/Engineering/java-concurrency-in-practice.md]
 related: [concepts/transactions-acid, concepts/eventual-consistency, concepts/locking, concepts/atomicity, topics/databases, topics/concurrent-programming, sources/designing-data-intensive-applications, sources/java-concurrency-in-practice]
 ---
 

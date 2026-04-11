@@ -3,7 +3,7 @@ title: Java Concurrency in Practice
 type: source
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/java-concurrency-in-practice.md]
+notes: notes/Engineering/java-concurrency-in-practice.md
 related: [concepts/thread-safety, concepts/atomicity, concepts/locking, concepts/memory-visibility, concepts/isolation-levels, concepts/transactions-acid, topics/concurrent-programming]
 ---
 
@@ -12,7 +12,7 @@ related: [concepts/thread-safety, concepts/atomicity, concepts/locking, concepts
 **Type:** book
 **Domain:** Engineering
 **Ingested:** 2026-04-11
-**Raw notes:** [[raw/Engineering/java-concurrency-in-practice|My notes while reading]]
+**Notes:** [[notes/Engineering/java-concurrency-in-practice|My notes while reading]]
 
 ## Summary
 

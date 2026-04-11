@@ -3,7 +3,7 @@ title: Reliability, Scalability, and Maintainability
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-raw: [Engineering/designing-data-intensive-applications.md]
+notes: [notes/Engineering/designing-data-intensive-applications.md]
 related: [concepts/distributed-faults, concepts/replication, topics/distributed-systems, topics/databases, sources/designing-data-intensive-applications]
 ---
 
