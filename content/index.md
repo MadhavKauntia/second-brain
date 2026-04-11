@@ -3,8 +3,10 @@ title: Madhav's Second Brain
 ---
 # Madhav's Second Brain
 
-This is my evolving knowledge garden — a messy, interconnected web of notes, ideas, and half-formed thoughts from my journey as a software engineer, poker player, and perpetually curious human.
+This is my knowledge garden — an evolving second brain built from everything I'm reading, studying, and thinking through as a software engineer, poker player, and compulsive rabbit-hole follower.
 
-Think of it as my external brain: everything I'm learning, questioning, connecting, and probably overthinking. Tech insights, poker strategy, decision-making frameworks, philosophical tangents, and the inevitable rabbit holes that seemed important at 2 AM.
+It has two layers. The **[[wiki/index|wiki]]** is the synthesized layer — concepts, connections, and cross-domain ideas maintained by an LLM as I ingest new material. The **raw notes** are exactly what they sound like: my unfiltered notes from books and courses, the source material the wiki is built on.
 
-Fair warning: it's unfiltered and constantly changing. Some notes are polished, others are barely coherent. Welcome to how I actually think.
+The wiki gets richer every time I read something new. The raw notes stay as they were written — messy where they were messy, clean where they were clean.
+
+Current domains: Engineering, AI, Psychology. More as I go.
