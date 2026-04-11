@@ -19,6 +19,7 @@ content/                       ← vault root (this is where you are)
 ├── CLAUDE.md                  ← this file (never published)
 ├── index.md                   ← homepage (published)
 ├── overview.md                ← evolving high-level synthesis (published)
+├── reading.md                 ← reading list (published)
 ├── log.md                     ← append-only activity log (never published)
 ├── Notes/                     ← immutable source material, READ ONLY, published as evidence
 │   ├── Engineering/           ← engineering book notes
@@ -189,6 +190,7 @@ Triggered when the human says "ingest [source path]".
 6. Update `index.md` — add new pages, update one-line summaries.
 7. Update `overview.md` if this source meaningfully shifts the big picture.
 8. Append entry to `log.md`.
+9. In `reading.md`: move the ingested source from **In Progress** to **Done**. If the human mentions what they are reading next, move it to **In Progress**.
 
 A single ingest typically touches 8–15 pages. That is expected and correct.
 
@@ -217,13 +219,13 @@ Triggered when the human says "lint the wiki", or after every ~10 ingests.
 - Missing `related` frontmatter links
 - Concepts appearing across multiple pages without their own dedicated page
 
-Report what you found and fixed. Suggest 2–3 sources worth seeking based on open edges across topic pages.
+Report what you found and fixed. Suggest 2–3 sources worth seeking based on open edges across topic pages. Add those suggested sources to the **Suggested** section in `reading.md`, only if they are not already present anywhere in the file.
 
 ---
 
 ## index.md Format
 
-Four sections: **Notes** | **Sources** | **Concepts** | **Topics**
+Four sections: **Notes** | **Sources** | **Concepts** | **Topics**, plus a footer link to the reading list.
 
 ```
 ## Notes
@@ -237,6 +239,10 @@ Four sections: **Notes** | **Sources** | **Concepts** | **Topics**
 
 ## Topics
 - [[Topics/slug|Title]] — one-line description
+
+---
+
+[[reading|Reading List]]
 ```
 
 Update on every ingest. Read this first when answering any query.
@@ -266,6 +272,7 @@ Append-only. Never edit old entries. Each entry header must start with `## [YYYY
 - When two sources contradict — flag it explicitly under "Tensions & counterarguments". Never paper over it.
 - Cross-domain connections are the highest-value output. When a concept from Engineering appears in Psychology or AI, note it explicitly on the concept page.
 - Every source page must link to its notes file. This is non-negotiable — it's what makes the knowledge base verifiable.
+- Some notes files are Kindle highlight exports — a list of direct quotes from the text. Treat these the same as handwritten notes: extract concepts, synthesize, do not reproduce the highlights verbatim on wiki pages.
 
 ---
 

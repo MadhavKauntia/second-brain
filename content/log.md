@@ -21,6 +21,12 @@
 - Pages updated: index.md, concepts/isolation-levels (added locking/atomicity cross-refs), concepts/transactions-acid (added atomicity cross-ref)
 - Notes: 4 new concept pages covering JVM concurrency fundamentals. Strong cross-wiki connections: locking ↔ 2PL, atomicity ↔ lost updates, memory-visibility ↔ eventual-consistency replication lag. Notes cover Fundamentals chapter only; open edges around happens-before, j.u.c., and coroutines.
 
+## [2026-04-11] ingest | Controlling Your Dopamine For Motivation, Focus and Satisfaction (Huberman)
+
+- Pages created: Sources/dopamine, Concepts/dopamine, Concepts/motivation-maintenance, Topics/psychology
+- Pages updated: index.md, overview.md
+- Notes: First Psychology source. Core insight: dopamine experience is determined by peak-to-baseline ratio, not absolute levels. Two concept pages: dopamine mechanics (neuroscience) and motivation-maintenance (applied principles). New cross-domain connection: relative-state-over-absolute-state pattern appears in both dopamine and DDIA's eventual consistency. Overview thesis updated to reflect first cross-domain convergence.
+
 ## [2026-04-11] rename | Capitalize directory names; update all references
 
 - Pages updated: all 22 wiki pages (CLAUDE.md, index.md, overview.md, 2 sources, 14 concepts, 3 topics)
