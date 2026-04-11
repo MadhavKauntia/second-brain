@@ -3,8 +3,8 @@ title: Transactions and ACID
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/designing-data-intensive-applications.md, notes/Engineering/java-concurrency-in-practice.md]
-related: [concepts/isolation-levels, concepts/storage-indexes, concepts/atomicity, concepts/distributed-faults, topics/databases, topics/concurrent-programming, sources/designing-data-intensive-applications, sources/java-concurrency-in-practice]
+notes: [Notes/Engineering/designing-data-intensive-applications.md, Notes/Engineering/java-concurrency-in-practice.md]
+related: [Concepts/isolation-levels, Concepts/storage-indexes, Concepts/atomicity, Concepts/distributed-faults, Topics/databases, Topics/concurrent-programming, Sources/designing-data-intensive-applications, Sources/java-concurrency-in-practice]
 ---
 
 # Transactions and ACID
@@ -17,7 +17,7 @@ A transaction groups multiple reads and writes into a logical unit: either all s
 
 - **Atomicity**: all writes in a transaction are applied, or none are. The ability to abort and discard all writes from a failed transaction is the defining feature. Atomicity prevents partial writes from leaving the database in an inconsistent intermediate state.
 - **Consistency**: certain invariants about the data (application-defined, not database-defined) are always true. Example: debits and credits always sum to zero. Importantly, this is the *application's* responsibility to define — the database can only enforce invariants it knows about (e.g., foreign key constraints, uniqueness). Consistency is the one "C" in ACID that is actually a property of the application, not the database.
-- **Isolation**: concurrently executing transactions are isolated from each other — they cannot observe each other's partial writes. Full isolation means serializability (transactions behave as if executed one at a time). In practice, databases often provide weaker isolation levels for performance reasons. See [[concepts/isolation-levels]].
+- **Isolation**: concurrently executing transactions are isolated from each other — they cannot observe each other's partial writes. Full isolation means serializability (transactions behave as if executed one at a time). In practice, databases often provide weaker isolation levels for performance reasons. See [[Concepts/isolation-levels]].
 - **Durability**: once a transaction commits, its writes are permanent, even in the face of hardware faults or crashes. Implemented via write-ahead logs (WAL) and replication.
 
 ### Single-object vs. multi-object transactions
@@ -37,7 +37,7 @@ The ACID contract lets application developers reason about correctness without t
 
 ## Evidence & examples
 
-From [[sources/designing-data-intensive-applications]]:
+From [[Sources/designing-data-intensive-applications]]:
 
 - The "C" in ACID is noted explicitly as the application's responsibility, not the database's — this is a commonly misunderstood point
 - ORM frameworks can introduce unsafe read-modify-write cycles that bypass atomic operations; this is a subtle source of bugs invisible in testing
@@ -45,13 +45,13 @@ From [[sources/designing-data-intensive-applications]]:
 
 ## Tensions & counterarguments
 
-- **Transactions are not free.** Serializable isolation has significant throughput cost. Most databases default to weaker isolation levels (see [[concepts/isolation-levels]]) and trust developers to understand the trade-offs.
+- **Transactions are not free.** Serializable isolation has significant throughput cost. Most databases default to weaker isolation levels (see [[Concepts/isolation-levels]]) and trust developers to understand the trade-offs.
 - **NoSQL's move away from transactions** was partly about scalability, but multi-object transactions in distributed systems are genuinely hard to implement correctly without sacrificing availability. Some systems (Spanner, CockroachDB) have solved this at significant complexity and latency cost.
 - **Durability is not absolute.** WAL plus replication provides strong durability, but durability guarantees only hold within the durability contract. If the entire datacenter is destroyed, replicas in the same datacenter don't help.
 
 ## Related
 
-- [[concepts/isolation-levels]] — the spectrum of isolation guarantees and the race conditions each level allows
-- [[concepts/storage-indexes]] — WAL and B-tree structure underpin atomicity and durability
-- [[concepts/distributed-faults]] — transactions in distributed systems face additional failure modes
-- [[topics/databases]] — broader database engineering context
+- [[Concepts/isolation-levels]] — the spectrum of isolation guarantees and the race conditions each level allows
+- [[Concepts/storage-indexes]] — WAL and B-tree structure underpin atomicity and durability
+- [[Concepts/distributed-faults]] — transactions in distributed systems face additional failure modes
+- [[Topics/databases]] — broader database engineering context

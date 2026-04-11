@@ -3,8 +3,8 @@ title: Reliability, Scalability, and Maintainability
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/designing-data-intensive-applications.md]
-related: [concepts/distributed-faults, concepts/replication, topics/distributed-systems, topics/databases, sources/designing-data-intensive-applications]
+notes: [Notes/Engineering/designing-data-intensive-applications.md]
+related: [Concepts/distributed-faults, Concepts/replication, Topics/distributed-systems, Topics/databases, Sources/designing-data-intensive-applications]
 ---
 
 # Reliability, Scalability, and Maintainability
@@ -25,7 +25,7 @@ The reliability framing in particular is useful: rather than asking "will this f
 
 ## Evidence & examples
 
-From [[sources/designing-data-intensive-applications]]:
+From [[Sources/designing-data-intensive-applications]]:
 
 - Faults classified as hardware (random, independent), software (systematic, often correlated), and human (configuration mistakes, the most common cause of outages)
 - Response time percentiles beat averages: p99 reveals tail latency that matters for SLAs; average hides it
@@ -33,13 +33,13 @@ From [[sources/designing-data-intensive-applications]]:
 
 ## Tensions & counterarguments
 
-- Reliability and scalability can conflict: making a system more available (e.g., adding replicas) introduces consistency complexity. See [[concepts/replication]] and [[concepts/eventual-consistency]].
+- Reliability and scalability can conflict: making a system more available (e.g., adding replicas) introduces consistency complexity. See [[Concepts/replication]] and [[Concepts/eventual-consistency]].
 - Simplicity and evolvability can conflict: the most evolvable systems sometimes need more abstraction layers, which increase apparent complexity for new engineers.
 - There is no universal set of "right" load parameters — what matters depends entirely on the system's architecture. Choosing the wrong metric leads to optimizing for the wrong thing.
 
 ## Related
 
-- [[concepts/distributed-faults]] — the adversarial conditions reliability must be designed against
-- [[concepts/replication]] — one primary tool for reliability (fault tolerance via redundancy)
-- [[topics/distributed-systems]] — broader context for why these properties are hard
-- [[topics/databases]] — the domain where these trade-offs are most sharply felt
+- [[Concepts/distributed-faults]] — the adversarial conditions reliability must be designed against
+- [[Concepts/replication]] — one primary tool for reliability (fault tolerance via redundancy)
+- [[Topics/distributed-systems]] — broader context for why these properties are hard
+- [[Topics/databases]] — the domain where these trade-offs are most sharply felt

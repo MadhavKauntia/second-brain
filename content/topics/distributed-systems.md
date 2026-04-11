@@ -3,8 +3,8 @@ title: Distributed Systems
 type: topic
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/designing-data-intensive-applications.md]
-related: [concepts/replication, concepts/partitioning, concepts/distributed-faults, concepts/linearizability, concepts/eventual-consistency, topics/databases]
+notes: [Notes/Engineering/designing-data-intensive-applications.md]
+related: [Concepts/replication, Concepts/partitioning, Concepts/distributed-faults, Concepts/linearizability, Concepts/eventual-consistency, Topics/databases]
 ---
 
 # Distributed Systems
@@ -15,15 +15,15 @@ The theory and engineering of systems that run across multiple machines connecte
 
 ## Core concepts
 
-- [[concepts/replication]] — keeping copies of data on multiple nodes for fault tolerance and read scaling
-- [[concepts/partitioning]] — splitting data across nodes for horizontal scalability
-- [[concepts/distributed-faults]] — the failure modes specific to distributed systems: partial failures, unreliable networks, unreliable clocks, Byzantine faults
-- [[concepts/linearizability]] — the strongest consistency guarantee in distributed systems; its connection to CAP theorem
-- [[concepts/eventual-consistency]] — the weaker consistency family produced by asynchronous replication
+- [[Concepts/replication]] — keeping copies of data on multiple nodes for fault tolerance and read scaling
+- [[Concepts/partitioning]] — splitting data across nodes for horizontal scalability
+- [[Concepts/distributed-faults]] — the failure modes specific to distributed systems: partial failures, unreliable networks, unreliable clocks, Byzantine faults
+- [[Concepts/linearizability]] — the strongest consistency guarantee in distributed systems; its connection to CAP theorem
+- [[Concepts/eventual-consistency]] — the weaker consistency family produced by asynchronous replication
 
 ## Key sources
 
-- [[sources/designing-data-intensive-applications]] — comprehensive treatment of distributed data systems, their failure modes, and the consistency/availability trade-offs
+- [[Sources/designing-data-intensive-applications]] — comprehensive treatment of distributed data systems, their failure modes, and the consistency/availability trade-offs
 
 ## Synthesis
 

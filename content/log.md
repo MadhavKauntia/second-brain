@@ -21,6 +21,11 @@
 - Pages updated: index.md, concepts/isolation-levels (added locking/atomicity cross-refs), concepts/transactions-acid (added atomicity cross-ref)
 - Notes: 4 new concept pages covering JVM concurrency fundamentals. Strong cross-wiki connections: locking ↔ 2PL, atomicity ↔ lost updates, memory-visibility ↔ eventual-consistency replication lag. Notes cover Fundamentals chapter only; open edges around happens-before, j.u.c., and coroutines.
 
+## [2026-04-11] rename | Capitalize directory names; update all references
+
+- Pages updated: all 22 wiki pages (CLAUDE.md, index.md, overview.md, 2 sources, 14 concepts, 3 topics)
+- Notes: Renamed concepts/ → Concepts/, sources/ → Sources/, topics/ → Topics/, notes/ → Notes/. Updated all wikilinks, frontmatter related: and notes: path values, and CLAUDE.md directory schema throughout. Log entries untouched (append-only; historical references intentionally preserved).
+
 ## [2026-04-11] rename | Rename raw/ directory to notes/; update all path references
 
 - Pages updated: all 20 wiki pages (2 sources, 14 concepts, 3 topics, overview.md) plus CLAUDE.md

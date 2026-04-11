@@ -3,8 +3,8 @@ title: Locking
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/java-concurrency-in-practice.md, notes/Engineering/designing-data-intensive-applications.md]
-related: [concepts/thread-safety, concepts/atomicity, concepts/memory-visibility, concepts/isolation-levels, topics/concurrent-programming, topics/databases, sources/java-concurrency-in-practice, sources/designing-data-intensive-applications]
+notes: [Notes/Engineering/java-concurrency-in-practice.md, Notes/Engineering/designing-data-intensive-applications.md]
+related: [Concepts/thread-safety, Concepts/atomicity, Concepts/memory-visibility, Concepts/isolation-levels, Topics/concurrent-programming, Topics/databases, Sources/java-concurrency-in-practice, Sources/designing-data-intensive-applications]
 ---
 
 # Locking
@@ -42,11 +42,11 @@ The discipline is where most bugs live: a variable guarded by different locks in
 
 ## Evidence & examples
 
-From [[sources/java-concurrency-in-practice]]:
+From [[Sources/java-concurrency-in-practice]]:
 - The one-lock-per-variable rule: if a `Map` and a separate `count` field must stay in sync, both must be guarded by the same lock — not separate synchronized blocks.
 - Reentrancy preventing deadlock: `parent.synchronized` calls `child.synchronized`; if reentrancy didn't exist, the child calling back into parent would deadlock.
 
-From [[sources/designing-data-intensive-applications]]:
+From [[Sources/designing-data-intensive-applications]]:
 - 2PL (database locking) produces serializable isolation — the strongest guarantee — but at a significant performance cost. Transaction throughput and query latency are substantially worse than under snapshot isolation.
 - Index-range locks are a practical approximation of predicate locks: instead of locking "all rows where room = 123 and time overlaps 12–1pm", lock the range in the room_id index covering room 123. Coarser than predicate locks, but cheaper.
 
@@ -59,8 +59,8 @@ From [[sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[concepts/thread-safety]] — locking is the tool for achieving thread safety when sharing mutable state
-- [[concepts/atomicity]] — locking makes compound operations atomic
-- [[concepts/memory-visibility]] — locking also provides visibility (a side effect not just mutual exclusion)
-- [[concepts/isolation-levels]] — database-level locking (2PL, row locks, predicate locks)
-- [[topics/concurrent-programming]] — broader concurrent programming context
+- [[Concepts/thread-safety]] — locking is the tool for achieving thread safety when sharing mutable state
+- [[Concepts/atomicity]] — locking makes compound operations atomic
+- [[Concepts/memory-visibility]] — locking also provides visibility (a side effect not just mutual exclusion)
+- [[Concepts/isolation-levels]] — database-level locking (2PL, row locks, predicate locks)
+- [[Topics/concurrent-programming]] — broader concurrent programming context

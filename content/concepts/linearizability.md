@@ -3,8 +3,8 @@ title: Linearizability and CAP Theorem
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/designing-data-intensive-applications.md]
-related: [concepts/replication, concepts/eventual-consistency, concepts/distributed-faults, topics/distributed-systems, sources/designing-data-intensive-applications]
+notes: [Notes/Engineering/designing-data-intensive-applications.md]
+related: [Concepts/replication, Concepts/eventual-consistency, Concepts/distributed-faults, Topics/distributed-systems, Sources/designing-data-intensive-applications]
 ---
 
 # Linearizability and CAP Theorem
@@ -45,7 +45,7 @@ The mismatch between expectation (implicit linearizability) and reality (eventua
 
 ## Evidence & examples
 
-From [[sources/designing-data-intensive-applications]]:
+From [[Sources/designing-data-intensive-applications]]:
 
 - Multi-leader replication is definitively non-linearizable: it explicitly allows concurrent writes on multiple nodes
 - Leaderless quorums appear to promise strong consistency but can be violated: if w + r > n but a write is not yet propagated to all w nodes when a read starts, a read quorum may miss the latest write
@@ -55,11 +55,11 @@ From [[sources/designing-data-intensive-applications]]:
 
 - **CAP is a blunt instrument.** Network partitions are rare in practice; the more common trade-off is between consistency and latency, not consistency and availability. The PACELC model extends CAP to cover the latency trade-off under normal operation.
 - **Linearizability is sometimes overkill.** Many applications only need causally consistent operations (happens-before relationships), not a global total order. Causal consistency is achievable without the full cost of linearizability and remains available during partitions.
-- **"Eventual consistency is fine for most things"** is often stated but rarely carefully validated. Before accepting eventual consistency, enumerate which anomalies are acceptable. See [[concepts/eventual-consistency]].
+- **"Eventual consistency is fine for most things"** is often stated but rarely carefully validated. Before accepting eventual consistency, enumerate which anomalies are acceptable. See [[Concepts/eventual-consistency]].
 
 ## Related
 
-- [[concepts/replication]] — which replication strategies can be linearizable
-- [[concepts/eventual-consistency]] — the weaker consistency alternative
-- [[concepts/distributed-faults]] — the fault conditions under which linearizability is maintained or lost
-- [[topics/distributed-systems]] — broader distributed systems theory
+- [[Concepts/replication]] — which replication strategies can be linearizable
+- [[Concepts/eventual-consistency]] — the weaker consistency alternative
+- [[Concepts/distributed-faults]] — the fault conditions under which linearizability is maintained or lost
+- [[Topics/distributed-systems]] — broader distributed systems theory

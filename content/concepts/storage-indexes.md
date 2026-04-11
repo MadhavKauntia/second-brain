@@ -3,8 +3,8 @@ title: Storage Engines and Indexes
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/designing-data-intensive-applications.md]
-related: [concepts/data-models, concepts/transactions-acid, concepts/replication, topics/databases, sources/designing-data-intensive-applications]
+notes: [Notes/Engineering/designing-data-intensive-applications.md]
+related: [Concepts/data-models, Concepts/transactions-acid, Concepts/replication, Topics/databases, Sources/designing-data-intensive-applications]
 ---
 
 # Storage Engines and Indexes
@@ -50,7 +50,7 @@ For analytical workloads, using a row-oriented OLTP database for queries that sc
 
 ## Evidence & examples
 
-From [[sources/designing-data-intensive-applications]]:
+From [[Sources/designing-data-intensive-applications]]:
 
 - The simplest database (two bash functions) illustrates why indexes exist — `db_get()` with a linear scan is O(n); an index reduces it to O(log n) or O(1)
 - B-tree branching factor of a few hundred means a tree of depth 4 can address 256TB of data
@@ -64,7 +64,7 @@ From [[sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[concepts/data-models]] — the logical layer above physical storage
-- [[concepts/transactions-acid]] — B-tree WAL is part of durability; isolation requires careful coordination with storage
-- [[concepts/replication]] — replication logs (WAL shipping, logical logs) are built on top of the storage layer
-- [[topics/databases]] — broader database engineering context
+- [[Concepts/data-models]] — the logical layer above physical storage
+- [[Concepts/transactions-acid]] — B-tree WAL is part of durability; isolation requires careful coordination with storage
+- [[Concepts/replication]] — replication logs (WAL shipping, logical logs) are built on top of the storage layer
+- [[Topics/databases]] — broader database engineering context

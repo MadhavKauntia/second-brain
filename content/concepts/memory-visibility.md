@@ -3,8 +3,8 @@ title: Memory Visibility and Reordering
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/java-concurrency-in-practice.md]
-related: [concepts/thread-safety, concepts/locking, concepts/eventual-consistency, topics/concurrent-programming, sources/java-concurrency-in-practice]
+notes: [Notes/Engineering/java-concurrency-in-practice.md]
+related: [Concepts/thread-safety, Concepts/locking, Concepts/eventual-consistency, Topics/concurrent-programming, Sources/java-concurrency-in-practice]
 ---
 
 # Memory Visibility and Reordering
@@ -38,18 +38,18 @@ The key insight: **locking is not just about mutual exclusion — it is also abo
 
 ## Evidence & examples
 
-From [[sources/java-concurrency-in-practice]]:
+From [[Sources/java-concurrency-in-practice]]:
 - `NoVisibility`: two static fields, one thread writes `number = 42; ready = true`, another thread loops until `ready` is true then prints `number`. Can loop forever (never sees `ready = true`) or print `0` (sees `ready = true` before seeing `number = 42`). Both outcomes result from reordering and visibility, not from a write race.
 
 ## Tensions & counterarguments
 
 - **Volatile is a footgun.** It looks simpler than locking and is easy to misapply. The three conditions for correct volatile use are easy to violate accidentally. In most cases, a lock or an `AtomicXxx` class is safer even if slightly more overhead.
 - **Modern hardware makes visibility bugs rare in practice — but not impossible.** On x86, the memory model is relatively strong; on ARM, it is weaker. A program that "works fine" on an x86 development machine may exhibit visibility bugs on an ARM production server (e.g., Android devices, AWS Graviton instances).
-- **The connection to distributed systems:** DDIA's treatment of replication lag and stale reads (see [[concepts/eventual-consistency]]) is the same visibility problem, scaled to distributed nodes. In both cases, writes are not immediately visible to all readers; in both cases, explicit synchronization or consistency protocols are needed to guarantee recency. The analogy runs surprisingly deep: volatile ≈ read-your-own-writes; synchronized ≈ linearizability.
+- **The connection to distributed systems:** DDIA's treatment of replication lag and stale reads (see [[Concepts/eventual-consistency]]) is the same visibility problem, scaled to distributed nodes. In both cases, writes are not immediately visible to all readers; in both cases, explicit synchronization or consistency protocols are needed to guarantee recency. The analogy runs surprisingly deep: volatile ≈ read-your-own-writes; synchronized ≈ linearizability.
 
 ## Related
 
-- [[concepts/thread-safety]] — visibility is one of the two properties synchronization must provide
-- [[concepts/locking]] — locking provides visibility as a side effect of synchronization boundaries
-- [[concepts/eventual-consistency]] — the distributed analogue: stale reads due to replication lag mirror stale reads due to cache/reordering
-- [[topics/concurrent-programming]] — broader concurrent programming context
+- [[Concepts/thread-safety]] — visibility is one of the two properties synchronization must provide
+- [[Concepts/locking]] — locking provides visibility as a side effect of synchronization boundaries
+- [[Concepts/eventual-consistency]] — the distributed analogue: stale reads due to replication lag mirror stale reads due to cache/reordering
+- [[Topics/concurrent-programming]] — broader concurrent programming context

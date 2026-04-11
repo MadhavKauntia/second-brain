@@ -3,8 +3,8 @@ title: Atomicity
 type: concept
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/java-concurrency-in-practice.md, notes/Engineering/designing-data-intensive-applications.md]
-related: [concepts/thread-safety, concepts/locking, concepts/transactions-acid, concepts/isolation-levels, topics/concurrent-programming, topics/databases, sources/java-concurrency-in-practice, sources/designing-data-intensive-applications]
+notes: [Notes/Engineering/java-concurrency-in-practice.md, Notes/Engineering/designing-data-intensive-applications.md]
+related: [Concepts/thread-safety, Concepts/locking, Concepts/transactions-acid, Concepts/isolation-levels, Topics/concurrent-programming, Topics/databases, Sources/java-concurrency-in-practice, Sources/designing-data-intensive-applications]
 ---
 
 # Atomicity
@@ -31,11 +31,11 @@ The read-modify-write pattern — read a value, compute a new value based on it,
 
 ## Evidence & examples
 
-From [[sources/java-concurrency-in-practice]]:
+From [[Sources/java-concurrency-in-practice]]:
 - `++count` race: two threads read `9`, both write `10`, increment is lost. Fix: use `AtomicLong.incrementAndGet()` which uses CAS, or protect with a lock.
 - The rule: "update *related* state variables in a single atomic operation" — if a class maintains a cached result and a flag indicating the cache is valid, both must be updated atomically or another thread can read an inconsistent combination.
 
-From [[sources/designing-data-intensive-applications]]:
+From [[Sources/designing-data-intensive-applications]]:
 - DDIA's "lost update" problem is the same read-modify-write race, but at the database transaction level: two transactions each read a value, increment it, and write it back — one increment is lost.
 - DDIA's solution mirrors JCIP's: use database atomic operations (`UPDATE counter SET value = value + 1`) or explicit locking (`SELECT FOR UPDATE`), exactly paralleling JCIP's `AtomicLong` or `synchronized`.
 - Compare-and-set in DDIA (`UPDATE ... WHERE content = 'old value'`) is the database-level equivalent of CAS at the program level.
@@ -48,9 +48,9 @@ From [[sources/designing-data-intensive-applications]]:
 
 ## Related
 
-- [[concepts/thread-safety]] — atomicity is one of the building blocks of thread-safe code
-- [[concepts/locking]] — the general mechanism for making compound operations atomic
-- [[concepts/transactions-acid]] — database-level atomicity; the all-or-nothing guarantee for a transaction
-- [[concepts/isolation-levels]] — lost updates (a failure of atomicity at the transaction level) and how isolation levels address them
-- [[topics/concurrent-programming]] — broader context for program-level concurrency
-- [[topics/databases]] — broader context for database-level atomicity
+- [[Concepts/thread-safety]] — atomicity is one of the building blocks of thread-safe code
+- [[Concepts/locking]] — the general mechanism for making compound operations atomic
+- [[Concepts/transactions-acid]] — database-level atomicity; the all-or-nothing guarantee for a transaction
+- [[Concepts/isolation-levels]] — lost updates (a failure of atomicity at the transaction level) and how isolation levels address them
+- [[Topics/concurrent-programming]] — broader context for program-level concurrency
+- [[Topics/databases]] — broader context for database-level atomicity

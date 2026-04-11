@@ -20,20 +20,20 @@ content/                       ← vault root (this is where you are)
 ├── index.md                   ← homepage (published)
 ├── overview.md                ← evolving high-level synthesis (published)
 ├── log.md                     ← append-only activity log (never published)
-├── notes/                     ← immutable source material, READ ONLY, published as evidence
+├── Notes/                     ← immutable source material, READ ONLY, published as evidence
 │   ├── Engineering/           ← engineering book notes
 │   └── Poker/                 ← poker notes
-├── sources/                   ← one synthesis page per ingested source
-├── concepts/                  ← one page per distinct idea or concept
-└── topics/                    ← cross-cutting domain hubs
+├── Sources/                   ← one synthesis page per ingested source
+├── Concepts/                  ← one page per distinct idea or concept
+└── Topics/                    ← cross-cutting domain hubs
 ```
 
 **Rules:**
 
-- Never modify anything in `notes/`. Read-only, always.
-- All wiki writes go inside `sources/`, `concepts/`, or `topics/`.
-- `sources/` is your synthesis of a source — not a copy of it. The note file lives in `notes/`; the source page is your interpretation: summary, key ideas, connections, open questions.
-- Every `sources/` page must link back to its corresponding `notes/` file so readers can verify the underlying notes.
+- Never modify anything in `Notes/`. Read-only, always.
+- All wiki writes go inside `Sources/`, `Concepts/`, or `Topics/`.
+- `Sources/` is your synthesis of a source — not a copy of it. The note file lives in `Notes/`; the source page is your interpretation: summary, key ideas, connections, open questions.
+- Every `Sources/` page must link back to its corresponding `Notes/` file so readers can verify the underlying notes.
 - Every new page must be linked from `index.md`.
 - Every ingest must be logged in `log.md`.
 
@@ -46,13 +46,13 @@ The vault publishes to notes.madhavkauntia.com via Quartz. URLs map directly fro
 ```
 index.md                              → notes.madhavkauntia.com/
 overview.md                           → notes.madhavkauntia.com/overview
-notes/Engineering/ddia.md             → notes.madhavkauntia.com/notes/Engineering/ddia
-sources/ddia.md                       → notes.madhavkauntia.com/sources/ddia
-concepts/mental-models.md             → notes.madhavkauntia.com/concepts/mental-models
-topics/system-design.md               → notes.madhavkauntia.com/topics/system-design
+Notes/Engineering/ddia.md             → notes.madhavkauntia.com/Notes/Engineering/ddia
+Sources/ddia.md                       → notes.madhavkauntia.com/Sources/ddia
+Concepts/mental-models.md             → notes.madhavkauntia.com/Concepts/mental-models
+Topics/system-design.md               → notes.madhavkauntia.com/Topics/system-design
 ```
 
-Use wikilinks everywhere: `[[concepts/mental-models]]`. These resolve correctly in both Obsidian and Quartz.
+Use wikilinks everywhere: `[[Concepts/mental-models]]`. These resolve correctly in both Obsidian and Quartz.
 
 ---
 
@@ -71,7 +71,7 @@ related: [list of wikilinks to related pages]
 ---
 ```
 
-### Source pages (`sources/`)
+### Source pages (`Sources/`)
 
 One page per ingested source. This is your synthesis — not a transcript of the notes file. Always link back to the original notes.
 
@@ -81,7 +81,7 @@ title: <Book / Article Title>
 type: source
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-notes: notes/Engineering/<filename>
+notes: Notes/Engineering/<filename>
 related: []
 ---
 
@@ -90,7 +90,7 @@ related: []
 **Type:** book | article | course | paper
 **Domain:** Engineering | Psychology | AI | Poker | ...
 **Ingested:** YYYY-MM-DD
-**Notes:** [[notes/Engineering/<filename>|My notes while reading]]
+**Notes:** [[Notes/Engineering/<filename>|My notes while reading]]
 
 ## Summary
 2–4 paragraphs. Your interpretation, not a recap. What does this source argue? What is its central claim?
@@ -105,7 +105,7 @@ Links to concept and topic pages this source informs. Note *how* it connects —
 What does this source leave unresolved? What would you want to read or study next?
 ```
 
-### Concept pages (`concepts/`)
+### Concept pages (`Concepts/`)
 
 One page per distinct idea. Keep atomic — if a page covers two separable ideas, split it.
 
@@ -128,7 +128,7 @@ Clear definition in your own words.
 Significance and practical context.
 
 ## Evidence & examples
-Draw from sources. Cite with wikilinks: [[sources/ddia]].
+Draw from sources. Cite with wikilinks: [[Sources/ddia]].
 
 ## Tensions & counterarguments
 Where does this concept break down? Where do sources disagree?
@@ -137,7 +137,7 @@ Where does this concept break down? Where do sources disagree?
 Links to related concepts and topics.
 ```
 
-### Topic pages (`topics/`)
+### Topic pages (`Topics/`)
 
 Cross-cutting domain hubs. A topic page maps a domain and links out — it doesn't define concepts itself.
 
@@ -181,11 +181,11 @@ Triggered when the human says "ingest [source path]".
 
 1. Read the notes file fully.
 2. Brief discussion with human: what surprised you, what's most important, any questions.
-3. Write `sources/<slug>.md` — synthesis page only. Do not copy notes content. Always include the **Notes** link pointing back to the file in `notes/`.
+3. Write `Sources/<slug>.md` — synthesis page only. Do not copy notes content. Always include the **Notes** link pointing back to the file in `Notes/`.
 4. Identify all concepts the source introduces or touches. For each:
     - If concept page exists → update it (add evidence, note tensions, revise synthesis, update `updated` date).
-    - If concept page doesn't exist → create `concepts/<slug>.md`.
-5. Identify relevant topics. Update or create `topics/<slug>.md`.
+    - If concept page doesn't exist → create `Concepts/<slug>.md`.
+5. Identify relevant topics. Update or create `Topics/<slug>.md`.
 6. Update `index.md` — add new pages, update one-line summaries.
 7. Update `overview.md` if this source meaningfully shifts the big picture.
 8. Append entry to `log.md`.
@@ -211,7 +211,7 @@ Triggered when the human says "lint the wiki", or after every ~10 ingests.
 
 - Concept pages mentioned in source or topic pages but not yet created
 - Orphan pages with no inbound wikilinks
-- Source pages missing their Notes link back to `notes/`
+- Source pages missing their Notes link back to `Notes/`
 - Stale synthesis on topic pages superseded by newer sources
 - Contradictions between pages — flag explicitly on the relevant concept page under "Tensions & counterarguments", never silently overwrite
 - Missing `related` frontmatter links
@@ -227,16 +227,16 @@ Four sections: **Notes** | **Sources** | **Concepts** | **Topics**
 
 ```
 ## Notes
-- [[notes/Engineering/slug|Title]] — one-line description
+- [[Notes/Engineering/slug|Title]] — one-line description
 
 ## Sources
-- [[sources/slug|Title]] — one-line summary (links to notes)
+- [[Sources/slug|Title]] — one-line summary (links to notes)
 
 ## Concepts
-- [[concepts/slug|Title]] — one-line definition
+- [[Concepts/slug|Title]] — one-line definition
 
 ## Topics
-- [[topics/slug|Title]] — one-line description
+- [[Topics/slug|Title]] — one-line description
 ```
 
 Update on every ingest. Read this first when answering any query.

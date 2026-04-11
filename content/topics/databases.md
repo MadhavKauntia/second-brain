@@ -3,8 +3,8 @@ title: Databases
 type: topic
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/designing-data-intensive-applications.md]
-related: [concepts/data-models, concepts/storage-indexes, concepts/transactions-acid, concepts/isolation-levels, concepts/replication, concepts/partitioning, topics/distributed-systems]
+notes: [Notes/Engineering/designing-data-intensive-applications.md]
+related: [Concepts/data-models, Concepts/storage-indexes, Concepts/transactions-acid, Concepts/isolation-levels, Concepts/replication, Concepts/partitioning, Topics/distributed-systems]
 ---
 
 # Databases
@@ -15,14 +15,14 @@ The engineering of data storage and retrieval systems — from single-node stora
 
 ## Core concepts
 
-- [[concepts/data-models]] — relational, document, graph models and the trade-offs between them
-- [[concepts/storage-indexes]] — how databases physically store data (B-trees, LSM-trees) and how indexes speed up queries
-- [[concepts/transactions-acid]] — what transactions are, what ACID guarantees mean, and what they cost
-- [[concepts/isolation-levels]] — the spectrum from weak to strong transaction isolation and the concurrency anomalies each allows
+- [[Concepts/data-models]] — relational, document, graph models and the trade-offs between them
+- [[Concepts/storage-indexes]] — how databases physically store data (B-trees, LSM-trees) and how indexes speed up queries
+- [[Concepts/transactions-acid]] — what transactions are, what ACID guarantees mean, and what they cost
+- [[Concepts/isolation-levels]] — the spectrum from weak to strong transaction isolation and the concurrency anomalies each allows
 
 ## Key sources
 
-- [[sources/designing-data-intensive-applications]] — the primary source for this topic; covers storage engines, data models, transactions, and distributed databases comprehensively
+- [[Sources/designing-data-intensive-applications]] — the primary source for this topic; covers storage engines, data models, transactions, and distributed databases comprehensively
 
 ## Synthesis
 
@@ -34,7 +34,7 @@ Databases are the dominant abstraction for durably storing structured data, and 
 
 **Transactions:** ACID transactions provide correctness guarantees for concurrent writes. The "C" in ACID is the application's responsibility. The real complexity is isolation: the isolation level determines which concurrency anomalies (dirty reads, lost updates, write skew, phantoms) are possible. Most databases default to read committed or snapshot isolation — not full serializability — for performance reasons.
 
-**Distribution:** When a single machine is insufficient, databases use replication (for fault tolerance and read scaling) and partitioning (for write scaling and data volume). Both introduce consistency complexity. See [[topics/distributed-systems]].
+**Distribution:** When a single machine is insufficient, databases use replication (for fault tolerance and read scaling) and partitioning (for write scaling and data volume). Both introduce consistency complexity. See [[Topics/distributed-systems]].
 
 ## Open edges
 

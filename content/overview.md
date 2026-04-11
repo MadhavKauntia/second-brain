@@ -3,8 +3,8 @@ title: Overview
 type: overview
 created: 2026-04-11
 updated: 2026-04-11
-notes: [notes/Engineering/designing-data-intensive-applications.md, notes/Engineering/java-concurrency-in-practice.md]
-related: [topics/distributed-systems, topics/databases]
+notes: [Notes/Engineering/designing-data-intensive-applications.md, Notes/Engineering/java-concurrency-in-practice.md]
+related: [Topics/distributed-systems, Topics/databases]
 ---
 
 # Overview
