@@ -16,7 +16,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "notes.madhavkauntia.com",
-    ignorePatterns: ["private", "templates", "CLAUDE.md", "log.md"],
+    ignorePatterns: ["private", "templates", "CLAUDE.md", "log.md", "notes/assets"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",

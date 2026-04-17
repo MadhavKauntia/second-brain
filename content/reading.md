@@ -16,3 +16,4 @@ title: Reading List
 ## Done
 - [x] Designing Data-Intensive Applications
 - [x] Java Concurrency in Practice
+- [x] From IDEs to AI Agents with Steve Yegge (The Pragmatic Engineer)

@@ -2,9 +2,9 @@
 title: Overview
 type: overview
 created: 2026-04-11
-updated: 2026-04-11
-notes: [Notes/Engineering/designing-data-intensive-applications.md, Notes/Engineering/java-concurrency-in-practice.md, Notes/Psychology/dopamine.md]
-related: [Topics/distributed-systems, Topics/databases, Topics/concurrent-programming, Topics/psychology]
+updated: 2026-04-17
+notes: [Notes/Engineering/designing-data-intensive-applications.md, Notes/Engineering/java-concurrency-in-practice.md, Notes/Psychology/dopamine.md, Notes/Engineering/Podcasts/steve-yagge-pragmatic-engineer.md]
+related: [Topics/distributed-systems, Topics/databases, Topics/concurrent-programming, Topics/psychology, Topics/ai-engineering]
 ---
 
 # Overview
@@ -15,7 +15,9 @@ related: [Topics/distributed-systems, Topics/databases, Topics/concurrent-progra
 
 ## Current thesis
 
-Knowledge compounds when the same structural patterns appear across domains. So far: distributed data systems (DDIA), JVM concurrency (JCIP), and dopamine neuroscience (Huberman) all converge on two recurring tensions — **relative state vs. absolute state**, and **shifted costs vs. eliminated costs**. The mechanisms differ entirely; the underlying logic is the same.
+Knowledge compounds when the same structural patterns appear across domains. So far: distributed data systems (DDIA), JVM concurrency (JCIP), dopamine neuroscience (Huberman), and AI engineering practice (Yegge) all converge on two recurring tensions — **relative state vs. absolute state**, and **shifted costs vs. eliminated costs**. The mechanisms differ entirely; the underlying logic is the same.
+
+The AI engineering data now sharpens the second tension. The [[Concepts/dracula-effect]] is a concrete case of shifted costs: AI does not eliminate cognitive effort, it shifts it — from routine tasks (eliminated) to judgment and review (intensified). The same pattern holds in distributed systems (replication shifts consistency burden to the application), in JVM concurrency (weak memory models shift visibility guarantees to the programmer), and in dopamine (reward stacking shifts the baseline, not the ceiling). **Every layer of the stack trades one type of cost for another; none actually removes it.**
 
 ## Strongest ideas so far
 
@@ -41,7 +43,9 @@ Knowledge compounds when the same structural patterns appear across domains. So 
 - **Intrinsic motivation theory** — where does Deci & Ryan's self-determination theory align with or diverge from the neurochemical model?
 - **Habit formation** — dopamine implies habits encode expected reward levels; connections to Duhigg, Clear
 - **Stress physiology** — cortisol / dopamine interaction; the other half of the motivation picture
+- **AI agent workflows at levels 5–8** — what systematic treatment of multi-agent orchestration looks like; no empirical documentation in the wiki yet
+- **Monolith modularisation for AI adoption** — structural path from large-monolith to AI-agent-capable codebase; connects system design to AI engineering
 
 ---
 
-*Last updated: 2026-04-11*
+*Last updated: 2026-04-17*

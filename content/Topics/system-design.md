@@ -2,9 +2,9 @@
 title: System Design
 type: topic
 created: 2026-04-11
-updated: 2026-04-11
+updated: 2026-04-17
 notes: []
-related: [Topics/distributed-systems, Topics/databases, Concepts/scaling, Concepts/delegation, Concepts/communication-protocols]
+related: [Topics/distributed-systems, Topics/databases, Topics/ai-engineering, Concepts/scaling, Concepts/delegation, Concepts/communication-protocols]
 ---
 
 # System Design
@@ -39,3 +39,4 @@ Both principles echo patterns already in the wiki. DDIA's entire treatment of di
 - Load balancing and service discovery — not yet covered
 - Capacity estimation methodology — the online/offline example shows napkin math; no systematic framework yet
 - Failure modes and resilience patterns — horizontal scaling mentions fault tolerance but does not yet explore it
+- **Monolith as AI adoption blocker** — [[Sources/steve-yegge-pragmatic-engineer]] identifies context-window limits (~0.5–2M LOC effective ceiling) as a structural barrier for agentic AI workflows; modularisation of large codebases is emerging as a system design concern, not just a code hygiene one. See [[Topics/ai-engineering]].

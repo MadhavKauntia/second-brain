@@ -17,6 +17,7 @@ The synthesized layer gets richer every time I read something new. The notes sta
 - [[Notes/Engineering/java-concurrency-in-practice|Java Concurrency in Practice]] — Goetz et al. reading notes; JVM concurrency fundamentals
 - [[Notes/Psychology/dopamine|Dopamine]] — Huberman Lab; dopamine mechanics, motivation, and reward design
 - [[Notes/Engineering/System Design Masterclass/01-foundational-topics-in-system-design|System Design Masterclass — Lecture 01]] — foundational approach, online/offline indicator case study, core topics survey
+- [[Notes/Engineering/Podcasts/steve-yagge-pragmatic-engineer|From IDEs to AI Agents with Steve Yegge]] — Pragmatic Engineer podcast; AI coding spectrum, Dracula Effect, prototype-as-product
 
 ## Sources
 
@@ -24,6 +25,7 @@ The synthesized layer gets richer every time I read something new. The notes sta
 - [[Sources/java-concurrency-in-practice|Java Concurrency in Practice]] — Goetz et al. on JVM concurrency fundamentals: thread safety, atomicity, locking, memory visibility and reordering
 - [[Sources/dopamine|Controlling Your Dopamine For Motivation, Focus and Satisfaction]] — Huberman on dopamine's role in motivation, the baseline/peak ratio, and reward design
 - [[Sources/system-design-masterclass-01|System Design Masterclass — Lecture 01]] — core-first design, heartbeat pattern, TTL optimization, scaling and delegation principles
+- [[Sources/steve-yegge-pragmatic-engineer|From IDEs to AI Agents with Steve Yegge]] — AI coding spectrum, Dracula Effect, prototype-as-product, monolith as AI adoption blocker
 
 ## Concepts
 
@@ -46,6 +48,9 @@ The synthesized layer gets richer every time I read something new. The notes sta
 - [[Concepts/scaling|Scaling]] — Vertical vs. horizontal scaling; stateful bottlenecks; scale bottom-up heuristic
 - [[Concepts/delegation|Delegation]] — Async by default; delegate and respond; what work belongs off the critical path
 - [[Concepts/communication-protocols|Communication Protocols]] — Short polling, long polling, WebSocket, SSE; when each applies
+- [[Concepts/ai-coding-spectrum|AI Coding Spectrum]] — Eight-level framework from no AI use to multi-agent orchestration; most engineers at levels 1–2
+- [[Concepts/dracula-effect|Dracula Effect]] — AI automates easy work, leaving only hard work; faster burnout despite 100x throughput
+- [[Concepts/prototype-as-product|Prototype-as-Product]] — Slot machine programming: generate many implementations in parallel, ship the best one
 
 ## Topics
 
@@ -54,6 +59,7 @@ The synthesized layer gets richer every time I read something new. The notes sta
 - [[Topics/concurrent-programming|Concurrent Programming]] — Thread safety, locking, memory visibility; program-level concurrency on the JVM
 - [[Topics/psychology|Psychology]] — Neuroscience of motivation and behavior; dopamine mechanics and reward design
 - [[Topics/system-design|System Design]] — Designing large-scale systems; component selection, capacity estimation, architectural trade-offs
+- [[Topics/ai-engineering|AI Engineering]] — AI's impact on the software craft; adoption spectrum, cognitive costs, structural blockers
 
 ---
 

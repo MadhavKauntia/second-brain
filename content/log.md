@@ -49,6 +49,12 @@
 - Pages updated: index.md, reading.md
 - Notes: Surface-level survey lecture. Three new concept pages kept lean — all will be deepened by later lectures. Key connections: Concepts/scaling links forward to DDIA's partitioning/replication; Concepts/delegation maps to Concepts/eventual-consistency; Concepts/locking and Concepts/atomicity already exist from JCIP and are referenced in source page. overview.md not updated — no thesis shift from introductory material.
 
+## [2026-04-17] ingest | From IDEs to AI Agents with Steve Yegge (The Pragmatic Engineer)
+
+- Pages created: Sources/steve-yegge-pragmatic-engineer, Concepts/ai-coding-spectrum, Concepts/dracula-effect, Concepts/prototype-as-product, Topics/ai-engineering
+- Pages updated: index.md, overview.md, reading.md, Topics/system-design (added monolith-as-AI-blocker to open edges)
+- Notes: First podcast ingest. Three new concept pages. Key cross-domain connection: Dracula Effect is a concrete instance of the shifted-costs pattern already established in DDIA (replication), JCIP (memory model), and Huberman (dopamine baseline). Overview thesis updated to make this pattern explicit. New Topics/ai-engineering hub created as entry point for AI practice material.
+
 ## [2026-04-11] ingest | Designing Data-Intensive Applications (Kleppmann)
 
 - Pages created: sources/designing-data-intensive-applications, concepts/reliability-scalability-maintainability, concepts/data-models, concepts/storage-indexes, concepts/replication, concepts/eventual-consistency, concepts/partitioning, concepts/transactions-acid, concepts/isolation-levels, concepts/distributed-faults, concepts/linearizability, topics/distributed-systems, topics/databases
