@@ -1,7 +1,6 @@
 ---
 title: Dopamine
 ---
-
 # [Controlling Your Dopamine For Motivation, Focus and Satisfaction](https://www.youtube.com/watch?v=QmOF0crdyRU&t=20s&ab_channel=AndrewHuberman)
 
 ## What Dopamine (Really) Does
