@@ -1,8 +1,6 @@
 ---
-title: Now / Queue
+title: Now
 ---
-# Now / Queue
-
 What I'm currently reading, studying, and writing. A living page — updated whenever priorities shift.
 
 > Last updated: 2026-07-19
@@ -11,6 +9,7 @@ What I'm currently reading, studying, and writing. A living page — updated whe
 
 **In progress**
 - [ ] The Final Empire — *Brandon Sanderson* · Mistborn Saga #1
+- [ ] On Writing Well — William Zinsser
 
 **Up next**
 - [ ]
@@ -24,11 +23,10 @@ What I'm currently reading, studying, and writing. A living page — updated whe
 
 **In progress**
 - [ ] No Silver Bullet: Essence and Accident in Software Engineering — *Fred Brooks*
-- [ ] Out of the Tar Pit — *Ben Moseley & Peter Marks*
-- [ ] End-to-End Arguments in System Design — *Saltzer, Reed & Clark*
 
 **Up next**
-- [ ]
+- [ ] Out of the Tar Pit — *Ben Moseley & Peter Marks*
+- [ ] End-to-End Arguments in System Design — *Saltzer, Reed & Clark*
 
 **Someday / backlog**
 - [ ]
@@ -49,5 +47,3 @@ What I'm currently reading, studying, and writing. A living page — updated whe
 
 ---
 
-## ✅ Recently done
-- [x] Example finished item — YYYY-MM-DD
