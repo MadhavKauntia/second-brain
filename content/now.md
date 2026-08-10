@@ -9,7 +9,7 @@ What I'm currently reading, studying, and writing. A living page — updated whe
 
 **In progress**
 - [ ] The Final Empire — *Brandon Sanderson* · Mistborn Saga #1
-- [ ] On Writing Well — William Zinsser
+- [ ] On Writing Well — *William Zinsser*
 
 **Up next**
 - [ ]
@@ -36,7 +36,7 @@ What I'm currently reading, studying, and writing. A living page — updated whe
 ## ✍️ Writing
 
 **In progress**
-- [ ] Clockwork — hackathon project for Hackin
+- [x] Clockwork — hackathon project for Hackin
 - [ ] Kotlin Coroutines
 
 **Up next**
